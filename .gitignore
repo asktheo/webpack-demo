@@ -1,3 +1,8 @@
 webpack.config.js
+*.log
+
 /dist/
 /node_modules/
+
+
+
