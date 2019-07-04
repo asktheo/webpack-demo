@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": 
-  { 
+  "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "webpack": "^3.1.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
-  }
+    "lodash": "^4.17.4",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
